@@ -5,11 +5,190 @@ require-dbt-version: [">=1.3.0", "<2.0.0"]
 models:
   hubspot_source:
     +materialized: table
-    +schema: stg_hubspot
+#    +schema: stg_hubspot
     tmp:
       +materialized: view
+      stg_hubspot__company_property_history_tmp:
+        +alias: 'r_hubspot_company_property_history_tmp'
+      stg_hubspot__company_tmp:
+        +alias: 'r_hubspot_company_tmp'
+      stg_hubspot__contact_list_member_tmp:
+        +alias: 'r_hubspot_contact_list_member_tmp'
+      stg_hubspot__contact_merge_audit_tmp:
+        +alias: 'r_hubspot_contact_merge_audit_tmp'
+      stg_hubspot__contact_property_history_tmp:
+        +alias: 'r_hubspot_contact_property_history_tmp'
+      stg_hubspot__contact_tmp:
+        +alias: 'r_hubspot_contact_tmp'
+      stg_hubspot__deal_company_tmp:
+        +alias: 'r_hubspot_deal_company_tmp'
+      stg_hubspot__deal_pipeline_tmp:
+        +alias: 'r_hubspot_deal_pipeline_tmp'
+      stg_hubspot__deal_pipeline_stage_tmp:
+        +alias: 'r_hubspot_deal_pipeline_stage_tmp'
+      stg_hubspot__deal_tmp:
+        +alias: 'r_hubspot_deal_tmp'
+      stg_hubspot__email_campaign_tmp:
+        +alias: 'r_hubspot_email_campaign_tmp'
+      stg_hubspot__email_event_bounce_tmp:
+        +alias: 'r_hubspot_email_event_bounce_tmp'
+      stg_hubspot__email_event_click_tmp:
+        +alias: 'r_hubspot_email_event_click_tmp'
+      stg_hubspot__email_event_deferred_tmp:
+        +alias: 'r_hubspot_email_event_deferred_tmp'
+      stg_hubspot__email_event_delivered_tmp:
+        +alias: 'r_hubspot_email_event_delivered_tmp'
+      stg_hubspot__email_event_dropped_tmp:
+        +alias: 'r_hubspot_email_event_dropped_tmp'
+      stg_hubspot__email_event_forward_tmp:
+        +alias: 'r_hubspot_email_event_forward_tmp'
+      stg_hubspot__email_event_open_tmp:
+        +alias: 'r_hubspot_email_event_open_tmp'
+      stg_hubspot__email_event_print_tmp:
+        +alias: 'r_hubspot_email_event_print_tmp'
+      stg_hubspot__email_event_sent_tmp:
+        +alias: 'r_hubspot_email_event_sent_tmp'
+      stg_hubspot__email_event_spam_report_tmp:
+        +alias: 'r_hubspot_email_event_spam_report_tmp'
+      stg_hubspot__email_event_status_change_tmp:
+        +alias: 'r_hubspot_email_event_status_change_tmp'
+      stg_hubspot__email_event_tmp:
+        +alias: 'r_hubspot_email_event_tmp'
+      stg_hubspot__engagement_call_tmp:
+       +alias: 'r_hubspot_engagment_call_tmp'
+      stg_hubspot__engagment_company_tmp:
+        +alias: 'r_hubspot_engagment_company_tmp'
+      stg_hubspot__engagement_contact_tmp:
+        +alias: 'r_hubspot_engagement_contact_tmp'
+      stg_hubspot__engagement_deal_tmp:
+        +alias: 'r_hubspot_engagement_deal_tmp'
+      stg_hubspot__engagement_email_tmp:
+        +alias: 'r_hubspot_engagement_email_tmp'
+      stg_hubspot__engagement_meeting_tmp:
+        +alias: 'r_hubspot_engagement_meeting_tmp'
+      stg_hubspot__engagement_note_tmp:
+        +alias: 'r_hubspot_engagement_note_tmp'
+      stg_hubspot__engagement_task_tmp:
+        +alias: 'r_hubspot_engagement_task_tmp'
+      stg_hubspot__engagement_tmp:
+        +alias: 'r_hubspot_engagement_tmp'
+      stg_hubspot__owner_tmp:
+        +alias: 'r_hubspot_owner_tmp'
+      stg_hubspot__ticket_company_tmp:
+        +alias: 'r_hubspot_ticket_company_tmp'
+      stg_hubspot__ticket_contact_tmp:
+        +alias: 'r_hubspot_ticket_contact_tmp'
+      stg_hubspot__ticket_deal_tmp:
+        +alias: 'r_hubspot_ticket_deal_tmp'
+      stg_hubspot__ticket_engagement_tmp:
+        +alias: 'r_hubspot_ticket_engagement_tmp'
+      stg_hubspot__ticket_pipeline_stage_tmp:
+        +alias: 'r_hubspot_ticket_pipeline_stage_tmp'
+      stg_hubspot__ticket_pipeline_tmp:
+        +alias: 'r_hubspot_ticket_pipeline_tmp'
+      stg_hubspot__ticket_property_history_tmp:
+        +alias: 'r_hubspot_ticket_property_history_tmp'
+      stg_hubspot__ticket_tmp:
+        +alias: 'r_hubspot_ticket_tmp'
+    stg_hubspot__company_property_history:
+      +alias: 'r_hubspot_company_property_history'
+    stg_hubspot__company:
+      +alias: 'r_hubspot_company'
+    stg_hubspot__contact_list:
+      +alias: 'r_hubspot_contact_list'
+    stg_hubspot__contact_list_member:
+      +alias: 'r_hubspot_contact_list_member'
+    stg_hubspot__contact_merge_audit:
+      +alias: 'r_hubspot_contact_merge_audit'
+    stg_hubspot__contact_property_history:
+      +alias: 'r_hubspot_contact_property_history'
+    stg_hubspot__contact:
+      +alias: 'r_hubspot_contact'
+    stg_hubspot__deal_company:
+      +alias: 'r_hubspot_deal_company'
+    stg_hubspot__deal_pipeline:
+      +alias: 'r_hubspot_deal_pipeline'
+    stg_hubspot__deal_pipeline_stage:
+      +alias: 'r_hubspot_deal_pipeline_stage'
+    stg_hubspot__deal:
+      +alias: 'r_hubspot_deal'
+    stg_hubspot__deal_property_history:
+      +alias: 'r_hubspot_deal_property_history'
+    stg_hubspot__deal_stage:
+      +alias: 'r_hubspot_deal_stage'
+    stg_hubspot__email_campaign:
+      +alias: 'r_hubspot_email_campaign'
+    stg_hubspot__email_event_bounce:
+      +alias: 'r_hubspot_email_event_bounce'
+    stg_hubspot__email_event_click:
+      +alias: 'r_hubspot_email_event_click'
+    stg_hubspot__email_event_deferred:
+      +alias: 'r_hubspot_email_event_deferred'
+    stg_hubspot__email_event_delivered:
+      +alias: 'r_hubspot_email_event_delivered'
+    stg_hubspot__email_event_dropped:
+      +alias: 'r_hubspot_email_event_dropped'
+    stg_hubspot__email_event_forward:
+      +alias: 'r_hubspot_email_event_forward'
+    stg_hubspot__email_event_open:
+      +alias: 'r_hubspot_email_event_open'
+    stg_hubspot__email_event_print:
+      +alias: 'r_hubspot_email_event_print'
+    stg_hubspot__email_event_sent:
+      +alias: 'r_hubspot_email_event_sent'
+    stg_hubspot__email_event_spam_report:
+      +alias: 'r_hubspot_email_event_spam_report'
+    stg_hubspot__email_event_status_change:
+      +alias: 'r_hubspot_email_event_status_change'
+    stg_hubspot__email_event:
+      +alias: 'r_hubspot_email_event'
+    stg_hubspot__engagement_call:
+      +alias: 'r_hubspot_engagment_call'
+    stg_hubspot__engagement_company:
+      +alias: 'r_hubspot_engagment_company'
+    stg_hubspot__engagement_contact:
+      +alias: 'r_hubspot_engagement_contact'
+    stg_hubspot__engagement_deal:
+      +alias: 'r_hubspot_engagement_deal'
+    stg_hubspot__engagement_email:
+      +alias: 'r_hubspot_engagement_email'
+    stg_hubspot__engagement_meeting:
+      +alias: 'r_hubspot_engagement_meeting'
+    stg_hubspot__engagement_note:
+      +alias: 'r_hubspot_engagement_note'
+    stg_hubspot__engagement_task:
+      +alias: 'r_hubspot_engagement_task'
+    stg_hubspot__engagement:
+      +alias: 'r_hubspot_engagement'
+    stg_hubspot__owner:
+      +alias: 'r_hubspot_owner'
+    stg_hubspot__ticket_company:
+      +alias: 'r_hubspot_ticket_company'
+    stg_hubspot__ticket_contact:
+      +alias: 'r_hubspot_ticket_contact'
+    stg_hubspot__ticket_deal:
+      +alias: 'r_hubspot_ticket_deal'
+    stg_hubspot__ticket_engagement:
+      +alias: 'r_hubspot_ticket_engagement'
+    stg_hubspot__ticket_pipeline_stage:
+      +alias: 'r_hubspot_ticket_pipeline_stage'
+    stg_hubspot__ticket_pipeline:
+      +alias: 'r_hubspot_ticket_pipeline'
+    stg_hubspot__ticket_property_history:
+      +alias: 'r_hubspot_ticket_property_history'
+    stg_hubspot__ticket:
+      +alias: 'r_hubspot_ticket'
+
 vars:
   hubspot_source:
+    
+    hubspot_email_event_forward_enabled: false
+    hubspot_email_event_print_enabled: false
+    hubspot_sales_enabled: false  
+    hubspot_engagement_enabled: false
+    
+    hubspot_database: PC_FIVETRAN_DB
+    hubspot_schema: HUBSPOT
     company: "{{ source('hubspot','company') }}"
     company_property_history: "{{ source('hubspot','company_property_history') }}"
     contact: "{{ source('hubspot','contact') }}"
@@ -20,7 +199,6 @@ vars:
     deal: "{{ source('hubspot','deal') }}"
     deal_stage: "{{ source('hubspot','deal_stage') }}"
     deal_company: "{{ source('hubspot','deal_company') }}"
-    deal_contact: "{{ source('hubspot','deal_contact') }}"
     deal_pipeline: "{{ source('hubspot','deal_pipeline') }}"
     deal_pipeline_stage: "{{ source('hubspot','deal_pipeline_stage') }}"
     deal_property_history: "{{ source('hubspot','deal_property_history') }}"
@@ -47,6 +225,9 @@ vars:
     engagement_note: "{{ source('hubspot','engagement_note') }}"
     engagement_task: "{{ source('hubspot','engagement_task') }}"
     owner: "{{ source('hubspot','owner') }}"
+
+
+    #Service Hub Models
     ticket_company: "{{ source('hubspot','ticket_company') }}"
     ticket_contact: "{{ source('hubspot','ticket_contact') }}"
     ticket_deal: "{{ source('hubspot','ticket_deal') }}"
@@ -55,6 +236,63 @@ vars:
     ticket_pipeline_stage: "{{ source('hubspot','ticket_pipeline_stage') }}"
     ticket_property_history: "{{ source('hubspot','ticket_property_history') }}"
     ticket: "{{ source('hubspot','ticket') }}"
+
+    #Service Hub Enable Variables
+    hubspot_service_enabled: false
+
+    #Contact Merge Audit Enable Variable
+    hubspot_contact_merge_audit_enabled: true
+
+    #HubSpot Passthrough Columns
+    hubspot__deal_pass_through_columns: []
+    hubspot__contact_pass_through_columns: [
+      {name: "PROPERTY_CREATEDATE", alias: "Contact_Created_Date"},
+      {name: "PROPERTY_HS_EMAIL_OPTOUT", alias: "Contact_Opt_Out_Status"},
+      {name: "PROPERTY_LEADSOURCE", alias: "Contact_Lead_Source"},
+      {name: "PROPERTY_LEAD_SOURCE_DETAIL_C", alias: "Contact_Lead_Source_Detail"},
+      {name: "PROPERTY_MQL_DATE", alias: "Contact_MQL_Date"},
+      {name: "PROPERTY_SQL_DATE", alias: "Contact_SQL_Date"},
+      {name: "PROPERTY_SCL_DATE", alias: "Contact_SCL_Date"},
+      {name: "PROPERTY_PROSPECT_DATE", alias: "Contact_Prospect_Date"},
+      {name: "PROPERTY_OPPORTUNITY_DATE", alias: "Contact_Opportunity_Date"},
+      {name: "PROPERTY_CLOSEDATE", alias: "Contact_Closed_Date"},
+      {name: "PROPERTY_DEMO_REQUEST_DATE", alias: "Contact_Demo_Request_Date"},
+      {name: "PROPERTY_FUNDING", alias: "Contact_Funding"},
+      {name: "PROPERTY_UTM_CAMPAIGN", alias: "Contact_UTM_Campaign"},
+      {name: "PROPERTY_UTM_MEDIUM", alias: "Contact_UTM_Medium"},
+      {name: "PROPERTY_UTM_SOURCE", alias: "Contact_UTM_Source"},
+      {name: "PROPERTY_UTM_TERM", alias: "Contact_UTM_Term"},
+      {name: "PROPERTY_INDUSTRY", alias: "Contact_Industry"},
+      {name: "PROPERTY_LEAD_OBJECTIVE", alias: "Contact_Lead_Objective"},
+      {name: "PROPERTY_LEAD_TYPE", alias: "Contact_Lead_Type"},
+      {name: "PROPERTY_NUMEMPLOYEES", alias: "Contact_Number_of_Employees"},
+      {name: "PROPERTY_HS_PERSONA", alias: "Contact_HS_Persona"},
+      {name: "PROPERTY_PLATFORM_ACCOUNT_TYPE", alias: "Contact_Platform_Account_Type"},
+      {name: "PROPERTY_PLATFORM_ACCOUNT", alias: "Contact_Platform_Account"},
+      {name: "PROPERTY_PLATFORM_ACCOUNT_CREATION_METHOD", alias: "Contact_Platform_Account_Creation_Method"},
+      {name: "PROPERTY_HS_EMAIL_HARD_BOUNCE_REASON_ENUM", alias: "Contact_HS_Email_Hard_Bounce_Reason"},
+      {name: "PROPERTY_HS_ANALYTICS_FIRST_URL", alias: "Contact_First_Url"},
+      {name: "PROPERTY_MK_CUSTOMER_FIT_SCORE", alias: "Contact_MK_Customer_Fit_Score"},
+      {name: "PROPERTY_MK_CUSTOMER_FIT_SEGMENT", alias: "Contact_MK_Customer_Fit_Segment"},
+      {name: "PROPERTY_MK_CUSTOMER_FIT_SIGNALS", alias: "Contact_MK_Customer_Fit_Signal"},
+      {name: "PROPERTY_MK_LEAD_GRADE_SCORE", alias: "Contact_MK_Lead_Grade_Score"},
+      {name: "PROPERTY_MK_LEAD_GRADE_SEGMENT", alias: "Contact_MK_Lead_Grade_Segment"},
+      {name: "PROPERTY_MK_LIKELIHOOD_TO_BUY_SCORE", alias: "Contact_MK_Likelihood_To_Buy_Score"},
+      {name: "PROPERTY_MK_LIKELIHOOD_TO_BUY_SEGMENT", alias: "Contact_MK_Likelihood_To_Buy_Segment"},
+      {name: "PROPERTY_MK_LIKELIHOOD_TO_BUY_SIGNALS", alias: "Contact_MK_Likelihood_To_Buy_Signals"},
+      {name: "PROPERTY_SALESFORCECAMPAIGNIDS", alias: "Contact_Salesforce_Campaign_IDs"},
+      {name: "PROPERTY_LEADSTATUS", alias: "Contact_Lead_Status"},
+      {name: "PROPERTY_SUB_STATUS", alias: "Contact_Sub_Status"},
+      {name: "PROPERTY_LIFECYCLESTAGE", alias: "Contact_Lifecycle_Stage"},
+      {name: "PROPERTY_SALESFORCEACCOUNTID", alias: "Contact_Salesforce_Account_ID"},
+      {name: "PROPERTY_SALESFORCECONTACTID", alias: "Contact_Salesforce_Contact_ID"},
+      {name: "PROPERTY_SALESFORCELEADID", alias: "Contact_Salesforce_Lead_ID"},
+      {name: "PROPERTY_MQL", alias: "Contact_IS_MQL"},
+      {name: "PROPERTY_LEAD_SOURCE_GROUP", alias: "Contact_Lead_Source_Grouping"},
+      {name: "PROPERTY_CONVERSION_PAGE", alias: "Contact_Conversion_Page"},
+      {name: "PROPERTY_HS_ANALYTICS_LAST_URL", alias: "Contact_Last_Page_Seen"}
+    ]
+
     hubspot__deal_pass_through_columns: []
     hubspot__contact_pass_through_columns: []
     hubspot__company_pass_through_columns: []
