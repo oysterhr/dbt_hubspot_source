@@ -245,55 +245,10 @@ vars:
 
     #HubSpot Passthrough Columns
     hubspot__deal_pass_through_columns: []
-    hubspot__stg_hubspot__contact_tmp_pass_through_all_columns: true 
-      # {name: "PROPERTY_CREATEDATE", alias: "Contact_Created_Date"},
-      # {name: "PROPERTY_HS_EMAIL_OPTOUT", alias: "Contact_Opt_Out_Status"},
-      # {name: "PROPERTY_LEADSOURCE", alias: "Contact_Lead_Source"},
-      # {name: "PROPERTY_LEAD_SOURCE_DETAIL_C", alias: "Contact_Lead_Source_Detail"},
-      # {name: "PROPERTY_MQL_DATE", alias: "Contact_MQL_Date"},
-      # {name: "PROPERTY_SQL_DATE", alias: "Contact_SQL_Date"},
-      # {name: "PROPERTY_SCL_DATE", alias: "Contact_SCL_Date"},
-      # {name: "PROPERTY_PROSPECT_DATE", alias: "Contact_Prospect_Date"},
-      # {name: "PROPERTY_OPPORTUNITY_DATE", alias: "Contact_Opportunity_Date"},
-      # {name: "PROPERTY_CLOSEDATE", alias: "Contact_Closed_Date"},
-      # {name: "PROPERTY_DEMO_REQUEST_DATE", alias: "Contact_Demo_Request_Date"},
-      # {name: "PROPERTY_FUNDING", alias: "Contact_Funding"},
-      # {name: "PROPERTY_UTM_CAMPAIGN", alias: "Contact_UTM_Campaign"},
-      # {name: "PROPERTY_UTM_MEDIUM", alias: "Contact_UTM_Medium"},
-      # {name: "PROPERTY_UTM_SOURCE", alias: "Contact_UTM_Source"},
-      # {name: "PROPERTY_UTM_TERM", alias: "Contact_UTM_Term"},
-      # {name: "PROPERTY_INDUSTRY", alias: "Contact_Industry"},
-      # {name: "PROPERTY_LEAD_OBJECTIVE", alias: "Contact_Lead_Objective"},
-      # {name: "PROPERTY_LEAD_TYPE", alias: "Contact_Lead_Type"},
-      # {name: "PROPERTY_NUMEMPLOYEES", alias: "Contact_Number_of_Employees"},
-      # {name: "PROPERTY_HS_PERSONA", alias: "Contact_HS_Persona"},
-      # {name: "PROPERTY_PLATFORM_ACCOUNT_TYPE", alias: "Contact_Platform_Account_Type"},
-      # {name: "PROPERTY_PLATFORM_ACCOUNT", alias: "Contact_Platform_Account"},
-      # {name: "PROPERTY_PLATFORM_ACCOUNT_CREATION_METHOD", alias: "Contact_Platform_Account_Creation_Method"},
-      # {name: "PROPERTY_HS_EMAIL_HARD_BOUNCE_REASON_ENUM", alias: "Contact_HS_Email_Hard_Bounce_Reason"},
-      # {name: "PROPERTY_HS_ANALYTICS_FIRST_URL", alias: "Contact_First_Url"},
-      # {name: "PROPERTY_MK_CUSTOMER_FIT_SCORE", alias: "Contact_MK_Customer_Fit_Score"},
-      # {name: "PROPERTY_MK_CUSTOMER_FIT_SEGMENT", alias: "Contact_MK_Customer_Fit_Segment"},
-      # {name: "PROPERTY_MK_CUSTOMER_FIT_SIGNALS", alias: "Contact_MK_Customer_Fit_Signal"},
-      # {name: "PROPERTY_MK_LEAD_GRADE_SCORE", alias: "Contact_MK_Lead_Grade_Score"},
-      # {name: "PROPERTY_MK_LEAD_GRADE_SEGMENT", alias: "Contact_MK_Lead_Grade_Segment"},
-      # {name: "PROPERTY_MK_LIKELIHOOD_TO_BUY_SCORE", alias: "Contact_MK_Likelihood_To_Buy_Score"},
-      # {name: "PROPERTY_MK_LIKELIHOOD_TO_BUY_SEGMENT", alias: "Contact_MK_Likelihood_To_Buy_Segment"},
-      # {name: "PROPERTY_MK_LIKELIHOOD_TO_BUY_SIGNALS", alias: "Contact_MK_Likelihood_To_Buy_Signals"},
-      # {name: "PROPERTY_SALESFORCECAMPAIGNIDS", alias: "Contact_Salesforce_Campaign_IDs"},
-      # {name: "PROPERTY_LEADSTATUS", alias: "Contact_Lead_Status"},
-      # {name: "PROPERTY_SUB_STATUS", alias: "Contact_Sub_Status"},
-      # {name: "PROPERTY_LIFECYCLESTAGE", alias: "Contact_Lifecycle_Stage"},
-      # {name: "PROPERTY_SALESFORCEACCOUNTID", alias: "Contact_Salesforce_Account_ID"},
-      # {name: "PROPERTY_SALESFORCECONTACTID", alias: "Contact_Salesforce_Contact_ID"},
-      # {name: "PROPERTY_SALESFORCELEADID", alias: "Contact_Salesforce_Lead_ID"},
-      # {name: "PROPERTY_MQL", alias: "Contact_IS_MQL"},
-      # {name: "PROPERTY_LEAD_SOURCE_GROUP", alias: "Contact_Lead_Source_Grouping"},
-      # {name: "PROPERTY_CONVERSION_PAGE", alias: "Contact_Conversion_Page"},
-      # {name: "PROPERTY_HS_ANALYTICS_LAST_URL", alias: "Contact_Last_Page_Seen"}
+    # hubspot__stg_hubspot__contact_tmp_pass_through_all_columns: true
 
     hubspot__deal_pass_through_columns: []
     hubspot__contact_pass_through_columns: []
     hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
-    hubspot__pass_through_all_columns: false
+    hubspot__pass_through_all_columns: true
