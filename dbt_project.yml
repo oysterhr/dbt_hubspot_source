@@ -245,7 +245,7 @@ vars:
 
     #HubSpot Passthrough Columns
     hubspot__deal_pass_through_columns: []
-    hubspot__contact_pass_through_all_columns : true 
+    hubspot__contact_pass_through_all_columns: true 
       # {name: "PROPERTY_CREATEDATE", alias: "Contact_Created_Date"},
       # {name: "PROPERTY_HS_EMAIL_OPTOUT", alias: "Contact_Opt_Out_Status"},
       # {name: "PROPERTY_LEADSOURCE", alias: "Contact_Lead_Source"},
