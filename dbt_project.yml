@@ -245,8 +245,6 @@ vars:
 
     #HubSpot Passthrough Columns
     hubspot__deal_pass_through_columns: []
-    # hubspot__stg_hubspot__contact_tmp_pass_through_all_columns: true
-
     hubspot__deal_pass_through_columns: []
     hubspot__contact_pass_through_columns: []
     hubspot__company_pass_through_columns: []
